@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Assignment</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="home">
+      <nav class="navigation">
+        <a class="nav" href="./index.html">Home</a>
+        <a class="nav" href="./about_me.html">About Me</a>
+        <a class="nav" href="./photos.html">Photos</a>
+        <a class="nav" href="#contact_me">Contact Me</a>
+        <input type="text" name="search" id="search" placeholder="Search.." />
+      </nav>
+    </header>
+    <section id="contact_me">
+      <h1>CONTACT ME</h1>
+      <div class="container">
+        <form action="./action_page.php" method="get">
+          <label for="fname">First Name</label>
+          <br />
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your first name"
+          /><br />
+          <label for="lname">Last Name</label>
+          <br />
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name"
+          /><br />
+
+          <label for="country">Country</label>
+          <br />
+          <select id="country" name="country">
+            <option value="India">India</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option></select
+          ><br />
+
+          <label for="subject">Subject</label>
+          <br />
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea
+          ><br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="contact">
+        <img
+          src="./map.jfif"
+          alt="map of mexico"
+          class="location"
+          height="75"
+          width="126"
+        />
+        <ul class="location-info">
+          <li>Mexico, USA</li>
+          <li>Phone: +91 9998887776</li>
+          <li>Email: saibackinaction1@gmail.com</li>
+        </ul>
+        <footer class="foot"><a href="#home">&uArr;</a></footer>
+      </div>
+    </section>
+  </body>
+</html>
