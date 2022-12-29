@@ -8,18 +8,26 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <header id="home">
+    <header id="#home">
       <nav class="navigation">
-        <a class="nav" href="./index.html">Home</a>
-        <a class="nav" href="./about_me.html">About Me</a>
-        <a class="nav" href="./photos.html">Photos</a>
-        <a class="nav" href="#contact_me">Contact Me</a>
-        <input type="text" name="search" id="search" placeholder="Search.." />
+        <a class="nav home" href="./index.html">Home</a>
+        <a class="nav about" href="./about_me.html">About Me</a>
+        <a class="nav photos" href="./photos.html">Photos</a>
+        <a class="nav contact" style="color: cyan" href="#contact_me"
+          >Contact Me</a
+        >
+        <input
+          class="nav search"
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search.."
+        />
       </nav>
     </header>
     <section id="contact_me">
       <h1>CONTACT ME</h1>
-      <div class="container">
+      <div class="contact-container">
         <form action="./action_page.php" method="get">
           <label for="fname">First Name</label>
           <br />
@@ -64,16 +72,25 @@
         <img
           src="./map.jfif"
           alt="map of mexico"
-          class="location"
+          class="map"
           height="75"
           width="126"
         />
-        <ul class="location-info">
-          <li>Mexico, USA</li>
-          <li>Phone: +91 9998887776</li>
-          <li>Email: saibackinaction1@gmail.com</li>
+        <ul class="contact-info">
+          <div class="location-img">
+            <img src="./location.png" alt="location image" class="icon" />
+            <li style="top: 0">Mexico, USA</li>
+          </div>
+          <div class="phone-img">
+            <img src="./phone.png" alt="phone image" class="icon" />
+            <li style="top: 24px">9998887776</li>
+          </div>
+          <div class="mail-img">
+            <img src="./mail.png" alt="mail image" class="icon" />
+            <li style="top: 44px">saibackinaction1@gmail.com</li>
+          </div>
         </ul>
-        <footer class="foot"><a href="#home">&uArr;</a></footer>
+        <footer class="foot"><a href="#contact_me">&uArr;</a></footer>
       </div>
     </section>
   </body>

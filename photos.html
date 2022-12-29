@@ -8,13 +8,21 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <header id="home">
+    <header id="#home">
       <nav class="navigation">
-        <a class="nav" href="./index.html">Home</a>
-        <a class="nav" href="./about_me.html">About Me</a>
-        <a class="nav" href="#photos">Photos</a>
-        <a class="nav" href="./contact.html">Contact Me</a>
-        <input type="text" name="search" id="search" placeholder="Search.." />
+        <a class="nav home" href="./index.html">Home</a>
+        <a class="nav about" href="./about_me.html">About Me</a>
+        <a class="nav photos" id="current" href="#photos " style="color: cyan"
+          >Photos</a
+        >
+        <a class="nav contact" href="./contact.html">Contact Me</a>
+        <input
+          class="nav search"
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search.."
+        />
       </nav>
     </header>
     <section id="photos">
@@ -89,6 +97,7 @@
             <figcaption class="picinfo">IMG-6</figcaption>
           </div>
         </div>
+        <!-- <footer class="foot"><a href="#photos">&uArr;</a></footer> -->
       </div>
     </section>
   </body>
